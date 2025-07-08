@@ -26,21 +26,25 @@ export default tseslint.config(
   },
   {
     rules: {
-  'no-console': ['error', { allow: ['warn', 'error'] }],
-  '@typescript-eslint/no-explicit-any': 'warn',
-  '@typescript-eslint/no-floating-promises': 'warn',
-  '@typescript-eslint/no-unsafe-argument': 'warn',
-  '@typescript-eslint/no-unused-vars': ['error', {
-    argsIgnorePattern: '^_',
-    varsIgnorePattern: '^_'
-  }],
-  '@typescript-eslint/no-non-null-assertion': 'error',
-  '@typescript-eslint/no-unsafe-assignment': 'warn',
-  '@typescript-eslint/no-unsafe-member-access': 'warn',
-  '@typescript-eslint/no-unsafe-call': 'warn',
-  'no-dupe-keys': 'error',
-  'no-duplicate-imports': 'error',
-  'prettier/prettier': 'error'
-}
+      'no-console': ['error', { allow: ['warn', 'error'] }],
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-floating-promises': 'warn',
+      '@typescript-eslint/no-unsafe-argument': 'warn',
+      '@typescript-eslint/explicit-function-return-type': 'error',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
+      '@typescript-eslint/no-non-null-assertion': 'error',
+      '@typescript-eslint/no-unsafe-assignment': 'warn',
+      '@typescript-eslint/no-unsafe-member-access': 'warn',
+      '@typescript-eslint/no-unsafe-call': 'warn',
+      'no-dupe-keys': 'error',
+      'no-duplicate-imports': 'error',
+      'prettier/prettier': 'error',
+    },
   },
 );
